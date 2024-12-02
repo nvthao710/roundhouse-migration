@@ -1,0 +1,1 @@
+ALTER TABLE Timmy ADD dude1 varchar(50) NULL
