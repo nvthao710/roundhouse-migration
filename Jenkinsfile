@@ -36,7 +36,7 @@ pipeline {
         }
         stage('Build and Run Docker') {
             steps {
-                sh "docker build -t roundhouse-image -f ./src/Dockerfile ."
+                sh "docker build -t roundhouse-image -f ."
                 sh "docker run --rm -it -e TARGET=$TARGET -e ENVIRONMENT=$ENVIRONMENT -e DATABASENAME=$DATABASE_NAME -e SERVERNAME=$SERVER_NAME -e USERID=$USERID -e PASSWORD=$PASSWORD --network bridge roundhouse-image:latest"
                 // sh 'docker build -t roundhouse-image .'
                 // sh "docker run -e ENVIRONMENT=$ENVIRONMENT roundhouse-image"
