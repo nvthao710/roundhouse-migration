@@ -12,8 +12,7 @@ RUN apk add --no-cache \
     libintl \
     libssl1.1 \
     libstdc++ \
-    zlib \
-    --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
+    zlib 
 
 # Set Mono environment variables
 ENV MONO_PATH=/usr/lib/mono
