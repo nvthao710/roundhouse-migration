@@ -10,9 +10,9 @@ RUN apk add --no-cache \
     krb5-libs \
     libgcc \
     libintl \
-    libssl1.1 \
     libstdc++ \
-    zlib 
+    zlib \
+    --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing
 
 # Set Mono environment variables
 ENV MONO_PATH=/usr/lib/mono
