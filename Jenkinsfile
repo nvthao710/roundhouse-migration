@@ -1,4 +1,4 @@
-def appSourceRepo = 'https://github.com/nvthao710/migration-database.git'
+def appSourceRepo = 'https://github.com/nvthao710/roundhouse-migration.git'
 def appSourceBranch = 'main'
 
 def githubAccount = 'github-account'
