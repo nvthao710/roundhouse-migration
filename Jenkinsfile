@@ -9,11 +9,11 @@ pipeline {
     parameters {
         string(name: 'TARGET', defaultValue: 'Default', description: 'TARGET')
         string(name: 'USERID', defaultValue: 'sa', description: 'USERID')
-        string(name: 'PASSWORD', defaultValue: '123456', description: 'PASSWORD')
+        string(name: 'PASSWORD', defaultValue: '123456x@X', description: 'PASSWORD')
         string(name: 'CONNECTION_STRING', defaultValue: 'Release', description: 'Configuration to build (Debug/Release/...)')
-        string(name: 'DATABASE_NAME', defaultValue: 'DATABASE_NAME', description: 'DATABASE_NAME')
-        string(name: 'ENVIRONMENT', defaultValue: 'SANDBOX', description: 'ENVIRONMENT')
-        string(name: 'SERVER_NAME', defaultValue: '0.0.0.0', description: 'SERVER_NAME')
+        string(name: 'DATABASE_NAME', defaultValue: 'RoundHouse2', description: 'DATABASE_NAME')
+        string(name: 'ENVIRONMENT', defaultValue: 'Sandbox', description: 'ENVIRONMENT')
+        string(name: 'SERVER_NAME', defaultValue: '172.16.97.207,1422', description: 'SERVER_NAME')
     }
     
     environment {
