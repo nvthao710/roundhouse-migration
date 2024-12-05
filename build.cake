@@ -20,14 +20,8 @@ Task("Migrate-Database")
     .Does(() =>
     {
         try{
-            // if(base64ConnectionString){
-            //     var base64EncodedBytes = System.Convert.FromBase64String(connectionStrings);
-            //     connectionStrings =  System.Text.Encoding.UTF8.GetString(base64EncodedBytes);
-            // }
-
             var settings = new RoundhouseSettings
             {
-                // ConnectionString = connectionStrings.Replace("{{databaseName}}", databaseName).Replace("{{userid}}", userId.Replace("-", "").ToLower()).Replace("{{password}}", password.Replace("-", "").ToLower()),
                 ConnectionString = connectionStrings,
                 DoNotCreateDatabase = doNotCreateDatabase,
                 Silent = true,
@@ -41,12 +35,6 @@ Task("Migrate-Database")
                 OutputPath = outputPath
             };
             RoundhouseMigrate(settings);
-            // RoundhouseMigrate(new RoundhouseSettings{
-            //     ConnectionString = "Server=172.16.97.207,1422;Database=RoundHouse;User Id=sa;Password=123456x@X;",
-            //     DatabaseName = "RoundHouse",
-            //     SqlFilesDirectory = "./src/db/SQLServer/Sandbox",
-            //     DoNotCreateDatabase = false
-            //     });
         }
         catch (Exception ex)
         {

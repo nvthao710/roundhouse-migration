@@ -26,12 +26,6 @@ RUN mono --version
 
 ADD .  /src
 
-# ENV TARGET="Default"
-# ENV ENVIRONMENT="Sandbox"
-# ENV DATABASENAME="RoundHouse"
-# ENV USERID="sa"
-# ENV PASSWORD="123456x@X"
-
 RUN chmod +x build-roundhouse.sh
 
 CMD ["./build-roundhouse.sh"]
