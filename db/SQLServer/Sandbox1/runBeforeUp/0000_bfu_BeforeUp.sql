@@ -1,1 +1,1 @@
-DELETE FROM dbo.Orders WHERE OrderDate < '2023-01-01';
+--DELETE FROM dbo.Orders WHERE OrderDate < '2023-01-01';
